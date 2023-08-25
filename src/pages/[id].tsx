@@ -26,7 +26,7 @@ const Music: NextPage<MusicProps> = ({ music }: MusicProps) => {
         }}>
         Voltar
       </button>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center bg-blue-900/10">
         <MusicContainer music={music} />
       </div>
     </main>

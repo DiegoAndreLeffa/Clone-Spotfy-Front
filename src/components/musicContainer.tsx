@@ -12,9 +12,9 @@ const MusicContainer = ({ music }: IMusicContainerProps) => {
   const { setCurrentMusic, currentMusic } = usePlayer();
   const isPlaying = currentMusic.music_url === music.music_url;
   return (
-    <div className="w-4/5 h-3/4 min-w-[1502px] min-h-[803] bg-gray-100/50 rounded-lg flex flex-row pb-8 pt-20">
+    <div className="w-4/5 h-3/4 min-w-[1502px] min-h-[803] bg-gray-100/60 rounded-lg flex flex-row pb-8 pt-20 ">
       <div className="flex flex-col justify-center w-2/4 pl-32">
-        <p className="text-5xl text-pink-800 pb-6 ml-12">{music.name}</p>
+        <p className="text-5xl text-blue-900 pb-6 ml-12">{music.name}</p>
         <div className=" w-[30rem] h-[33rem] ml-12">
           <Image
             className="h-[426px]"
@@ -38,19 +38,19 @@ const MusicContainer = ({ music }: IMusicContainerProps) => {
         </div>
       </div>
       <div className="flex flex-col gap-12 w-2/4 justify-center ">
-        <p className="text-5xl my-2 text-pink-800">
+        <p className="text-5xl my-2 text-blue-900">
           {" "}
           <strong>Artista:</strong> {music.artist}
         </p>
-        <p className="text-5xl my-2 text-pink-800">
+        <p className="text-5xl my-2 text-blue-900">
           {" "}
           <strong>Álbum:</strong> {music.album}
         </p>
-        <p className="text-5xl my-2 text-pink-800">
+        <p className="text-5xl my-2 text-blue-900">
           {" "}
           <strong>Gênero:</strong> {music.genre}
         </p>
-        <p className="text-5xl my-2 text-pink-800">
+        <p className="text-5xl my-2 text-blue-900">
           {" "}
           <strong>Ano: </strong> {music.year}
         </p>

@@ -16,7 +16,7 @@ const Home: NextPage<HomeProps> = ({ musics }) => {
   }, []);
   return (
     <main
-      className={`body grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 min-h-screen justify-items-center p-20`}>
+      className={` body grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 min-h-screen justify-items-center p-24`}>
       {musics.map((music) => {
         return <Card key={music.id} music={music} />;
       })}
