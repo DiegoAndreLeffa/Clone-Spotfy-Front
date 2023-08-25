@@ -26,7 +26,7 @@
   }
 
   .user-form-input {
-    @apply mt-1 px-6 py-4 h-14 text-xl bg-blue-900 shadow-sm placeholder-slate-400 focus:outline-none block w-full rounded-md
+    @apply mt-1 px-6 py-4 h-14 text-xl bg-pink-500 shadow-sm placeholder-slate-400 focus:outline-none block w-full rounded-md
   }
 
   .user-form-button {

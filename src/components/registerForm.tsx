@@ -15,7 +15,7 @@ const RegisterForm = () => {
   };
   return (
     <div className="user-form-container">
-      <p className="text-4xl mt-6 bg-blue-900/70font-semibold">Fazer cadastro</p>
+      <p className="text-4xl mt-6 font-semibold">Fazer cadastro</p>
       <form className="space-y-6 w-4/5" onSubmit={handleSubmit(onFormSubmit)}>
         <div>
           <label htmlFor="name" className="user-form-label">
