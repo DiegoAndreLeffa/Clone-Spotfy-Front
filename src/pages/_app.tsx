@@ -4,6 +4,7 @@ import { PlayerProvider } from "@/contexts/playerContext";
 import { ToastContainer } from "react-toastify";
 import { AuthProvider } from "@/contexts/authContext";
 import "react-toastify/dist/ReactToastify.css";
+import { MusicProvider } from "@/contexts/musicContext";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -22,7 +23,9 @@ export default function App({ Component, pageProps }: AppProps) {
       />
       <AuthProvider>
         <PlayerProvider>
-          <Component {...pageProps} />
+          <MusicProvider>
+            <Component {...pageProps} />
+          </MusicProvider>
         </PlayerProvider>
       </AuthProvider>
     </>
